@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.paraghraph {
+    color: bisque;
+    width: 100%;
+    height: 300px;
+    padding: 150px;
+    background-color: aqua;
+    background-image:-moz-repeating-linear-gradient()
+}
