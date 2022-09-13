@@ -1,16 +1,77 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
-    text-decoration: none;
-}
-
-.paraghraph {
-    color: bisque;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .container {
+    width: 80%;
+    background-color: #0a0101;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    display: flex;
+    padding: 60px 50px;
+    align-items: center;
+  }
+  .gambar {
+    width: 40%;
+  }
+  .gambar img {
     width: 100%;
-    height: 300px;
-    padding: 150px;
-    background-color: aqua;
-    background-image:-moz-repeating-linear-gradient()
-}
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .biodata {
+    width: 50%;
+    margin: 0px 30px;
+    color: #fff5a7;
+  }
+  .biodata h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .biodata h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+  .biodata h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  .biodata p {
+    text-align: justify;
+  }
+  .sosmed {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sosmed a {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin: 5px 0px;
+    background-color: #040e13;
+    color: #8f94ad;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      padding: 5px;
+    }
+    .container {
+      flex-direction: column;
+      background-color: #000;
+    }
+    .gambar, .biodata, .sosmed {
+      width: 100%;
+    }
+  }
